@@ -22,42 +22,34 @@
 
 .logo_place_header{
   position: absolute;
-  margin-left: 64px;
-  margin-top: 30px;
+  left: 64px;
+  top: 30px;
   background: url("../images/logo_place_header.svg") no-repeat;
   width: 183px;
   height: 32px;
 }
 
-div.header__title{
-  display: flex;
+.header__title{
   width: 730px;
   padding: 0;
   margin: auto 0 auto 64px;
   z-index: 99;
-}
-
-h1.header__title{
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
 }
 
-div.header__subtitle{
+
+.header__subtitle{
   position: absolute;
-  bottom: 0;
-  margin: auto auto 30px 64px;
-  padding: 0;
+  bottom: 34px;
+  left: 64px;
   width: 388px;
   z-index: 100;
-}
-
-p.header__subtitle{
-  margin: 0;
-  padding: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
 }
 
 .header__link{
@@ -115,10 +107,14 @@ p.header__subtitle{
 
 .two-columns__paragraph{
   margin: 0;
-  padding-bottom: 30px;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
+
+.two-columns__paragraph:not(:last-child){
+  margin-bottom: 30px;
 }
 
 .two-columns__span-accent{
@@ -138,10 +134,6 @@ p.header__subtitle{
   text-align: center;
   margin: 0 auto 20px auto;
   padding: 0;
-}
-
-.section-title_theme_white{
-  margin: 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -151,10 +143,6 @@ p.header__subtitle{
   margin: 0 auto;
   width: 60%;
   text-align: center;
-}
-
-.section-subtitle_theme_white{
-  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -166,9 +154,10 @@ p.header__subtitle{
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
+  list-style-type: none;
 }
 
-.table__cell_theme_white{
+.table__cell{
   width: 250px;
   margin-top: 60px;
 }
@@ -229,7 +218,7 @@ p.header__subtitle{
 }
 
 .kaufman{
-  background-color: #000;
+  background-color: #1f1f1f;
   padding-top: 90px;
   padding-bottom: 90px;
   overflow: hidden;
@@ -239,7 +228,6 @@ p.header__subtitle{
 
 .section-title_theme_dark{
   color: white;
-  margin: 0;
   font-size: 60px;
   line-height: 69px;
   font-weight: bold;
@@ -247,7 +235,6 @@ p.header__subtitle{
 
 .section-subtitle_theme_dark{
   color: white;
-  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -268,10 +255,11 @@ p.header__subtitle{
   color: white;
 }
 
-img.kaufman__triangle{
+.kaufman__triangle{
+  background-image: url("../images/kaufman-triangle.svg");
   width: 877px;
   height: 877px;
-  z-index: -2;
+  z-index: -1;
   position: absolute;
   top: 0;
   right: -210px;
@@ -307,11 +295,14 @@ img.kaufman__triangle{
   height: 35px;
 }
 
+.footer__column{
+  color: white;
+}
+
 .footer__author{
   margin: 0;
   padding-top: 18px;
   padding-bottom: 18px;
-  color: white;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -320,7 +311,6 @@ img.kaufman__triangle{
 .footer__column-heading{
   margin-top: 0;
   margin-bottom: 20px;
-  color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -330,7 +320,9 @@ img.kaufman__triangle{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .footer__column-link{
@@ -340,12 +332,6 @@ img.kaufman__triangle{
   text-decoration-line: none;
   display: flex;
   color: white;
-}
-
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .footer__social-icon{
